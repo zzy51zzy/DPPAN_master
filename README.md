@@ -8,3 +8,9 @@ Deep Physically Parameterized All-in-One Network for Lens-free Microscopy Imagin
 
 # Using the code:
 The code is stable while using Python 3.9.18, CUDA >=11.8
+
+# DataSets:
+## Train Dataset：
+ We collect the training data of 6,000 images of size 256×256 cropped from 500 images from the Berkeley Segmentation Dataset.
+## Test Datasets:
+
