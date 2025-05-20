@@ -14,8 +14,11 @@ git clone https://github.com/zzy51zzy/DPPAN_master
 cd DPPAN
 ```
 To install all the dependencies using conda:
+
+```bash
 conda env create -f environment.yml
 conda activate dppan
+```
 
 ## DataSets:
 ### Train Dataset：
