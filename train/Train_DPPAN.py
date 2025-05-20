@@ -144,7 +144,8 @@ class ProxNet(nn.Module):
         return x_pred + x_img
 
 class DPPAN(torch.nn.Module):
-    """(5)DPPAN: The SENet is replaced by CSENet, where the linear layers are determined by other fully connected layers according to physical parameters (such as p)."""
+    """(5)DPPAN: The SENet is replaced by CSENet, where the linear layers are determined 
+    by other fully connected layers according to physical parameters (such as p)."""
     def __init__(self, LayerNo):  # layer_num
         super(DPPAN, self).__init__()
         self.step_size = nn.Parameter(0.5*torch.ones(LayerNo))
