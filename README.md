@@ -19,7 +19,14 @@ To install all the dependencies using conda:
 conda env create -f environment.yml
 conda activate dppan
 ```
-
+## Demo:
+You could download the pre-trained model from [here](https://github.com/zzy51zzy/DPPAN_master/tree/main/model). Remember to put the pre-trained model into model/  
+If you only need the final reconstruction results, you could put the test images into data/test/ and use the following command to restore the test image:  
+[Test_BN.py](https://github.com/zzy51zzy/DPPAN_master/blob/main/Test_BN.py) for (1)BN  
+[Test_BN(AIO).py](https://github.com/zzy51zzy/DPPAN_master/blob/main/Test_BN(AIO).py) for (2)BN(AIO)  
+[Test_BN+CAdaIN1(AIO).py](https://github.com/zzy51zzy/DPPAN_master/blob/main/Test_BN%2BCAdaIN1(AIO).py) for(3)BN+CAdaIN1(AIO)  
+[Test_BN+CAdaIN2(AIO).py](https://github.com/zzy51zzy/DPPAN_master/blob/main/Train_BN%2BCadaIN2(AIO).py) for(4)BN+CAdaIN2(AIO)  
+[Test_DPPAN.py](https://github.com/zzy51zzy/DPPAN_master/blob/main/Test_DPPAN.py) for (5)DPPAN  
 ## DataSets:
 ### Train Dataset：
  We collect the training data of 6,000 images of size 256×256 cropped from 500 images from the Berkeley Segmentation Dataset.  
