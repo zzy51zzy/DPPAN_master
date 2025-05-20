@@ -22,9 +22,11 @@ conda activate dppan
 
 ## DataSets:
 ### Train Dataset：
- We collect the training data of 6,000 images of size 256×256 cropped from 500 images from the Berkeley Segmentation Dataset.
+ We collect the training data of 6,000 images of size 256×256 cropped from 500 images from the Berkeley Segmentation Dataset.  
+ You can click here to download BSD6000 dataset directly: [BSD6000]()
 ### Test Datasets:
-Set12 and unnatural6
+Nature dataset: [Set12](https://github.com/zzy51zzy/DPPAN_master/tree/main/data/test/Set12)  
+Unnatural dataset: [unnatural6](https://github.com/zzy51zzy/DPPAN_master/tree/main/data/test/unnatural6)
 ### Dataset format:
 Download the datasets and arrange them in the following format:
 ```
@@ -35,3 +37,15 @@ Download the datasets and arrange them in the following format:
     |   └── test  # Testing         
     |   |   ├── <dataset_name, eg. Set12, unnatural6>          
 ```
+
+If you want to re-train our model, you need to first put the training set into the data/, and use the following command:
+- (1)BN (baseline)  
+Please run 'Train_BN.py' and save model parameters to 'model/<model_name>'. And then run 'Test_BN.py' using the saved model.
+- (2)BN(AIO)  
+Please run 'Train_BN(AIO).py' and save model parameters to 'model/<model_name>'. And then run 'Test_BN(AIO).py' using the saved model.
+- (3)BN+CAdaIN1(AIO)  
+Please run 'Train_BN+CAdaIN1(AIO).py' and save model parameters to 'model/<model_name>'. And then run 'Test_BN+CAdaIN1(AIO).py' using the saved model.
+- (4)BN+CAdaIN2(AIO)  
+Please run 'Train_BN+CAdaIN2(AIO).py' and save model parameters to 'model/<model_name>'. And then run 'Test_BN+CAdaIN2(AIO)' using the saved model.
+- (5)DPPAN  
+Please run 'Train_DPPAN.py' and save model parameters to 'odel/<model_name>'. And then run 'Test_DPPAN.py' using the saved model.
