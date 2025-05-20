@@ -94,7 +94,8 @@ class ProxNet(nn.Module):
         x_pred = output6.squeeze(1)
         return x_pred + x_img
 class BN(torch.nn.Module):
-    """Base network: This is the basic deep unrolling network, and it also constitutes the backbone of our architecture."""
+    """Base network: This is the basic deep unrolling network, 
+    and it also constitutes the backbone of our architecture."""
     def __init__(self, LayerNo):  # layer_num
         super(BN, self).__init__()
         self.step_size = nn.Parameter(0.5*torch.ones(LayerNo))
