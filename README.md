@@ -6,7 +6,7 @@ Deep Physically Parameterized All-in-One Network for Lens-free Microscopy Imagin
 ![model](https://github.com/user-attachments/assets/f68b5047-464b-49be-b2ec-7263603ed6d0)
 
 
-## Using the code:
+## Using the code
 The code is stable while using Python 3.9.18, CUDA >=11.8
 - Clone this repository:
 ```bash
@@ -20,7 +20,7 @@ conda env create -f environment.yml
 conda activate dppan
 ```
 
-## DataSets:
+## DataSets
 ### Train Dataset：
  We collect the training data of 6,000 images of size 256×256 cropped from 500 images from the Berkeley Segmentation Dataset.  
  You can click here to download BSD6000 dataset directly: [BSD6000](https://drive.google.com/drive/folders/1mMyTkiMfNIaZWfIscg7FH8apXp-h7W4m?usp=drive_link)
@@ -38,7 +38,7 @@ Download the datasets and arrange them in the following format:
     |   |   ├── <dataset_name, eg. Set12, unnatural6>
 ```
 
-## Demo:
+## Demo
 You could download the pre-trained model from [here](https://github.com/zzy51zzy/DPPAN_master/tree/main/model). Remember to put the pre-trained model into model/  
 If you only need the final reconstruction results, you could put the test images into data/test/ and use the following command to restore the test image:  
 [Test_BN.py](https://github.com/zzy51zzy/DPPAN_master/blob/main/Test_BN.py) for (1)BN  
