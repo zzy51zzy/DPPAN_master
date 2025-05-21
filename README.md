@@ -21,7 +21,7 @@ conda activate dppan
 ```
 
 ## DataSets
-### Train Dataset：
+### Train Dataset:
  We collect the training data of 6,000 images of size 256×256 cropped from 500 images from the Berkeley Segmentation Dataset.  
  You can click here to download BSD6000 dataset directly: [BSD6000](https://drive.google.com/drive/folders/1mMyTkiMfNIaZWfIscg7FH8apXp-h7W4m?usp=drive_link)
 ### Test Datasets:
